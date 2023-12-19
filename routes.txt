@@ -1,0 +1,39 @@
+Routes needed for LocalLibrary
+
+catalog - home/index
+
+catalog/<objects>/ - list of all books, bookinstances, genres or authors
+    catalog/books/
+    catalog/authors/
+    catalog/bookInstances/
+    catalog/genres/
+
+
+catalog/<object>/<id> - detail page for specific book, author, bookInstance, genres 
+    * _id - unique id for instances(documents)
+
+    catalog/book/584493c1f4887f06c0e67d37
+
+
+catalog/<object>/create - create new instance (book, author, bookInstance, genre)
+    catalog/book/create
+    catalog/author/create
+    catalog/bookInstance/create
+    catalog/genre/create
+
+
+catalog/book/<id>/update - update specific book, author, bookInstance, genre
+    catalog/book/584493c1f4887f06c0e67d37/update
+    catalog/author/584493c1f4887f06c0e67d37/update
+    catalog/bookInstance/584493c1f4887f06c0e67d37/update
+    catalog/genre/584493c1f4887f06c0e67d37/update
+
+
+
+catalog/book/<id>/delete - delete specific book, author, bookInstance, genre
+    catalog/book/584493c1f4887f06c0e67d37/delete
+    catalog/author/584493c1f4887f06c0e67d37/delete
+    catalog/bookInstance/584493c1f4887f06c0e67d37/delete
+    catalog/genre/584493c1f4887f06c0e67d37/delete
+
+    
